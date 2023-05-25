@@ -1,0 +1,36 @@
+module Issue1646Alias5Mod where
+    f : Bool -> Bool
+    f = \x. True
+    g : Bool -> Bool
+    g = \x. False
+    module M0(p1: (\x2. if True then Bool else x2 : Type -> Type) Bool) where
+        d3 : (\x6. if True then x6 else x6 : Type -> Type) (if False then Bool else Bool)
+        d3 = (\x4. (\x5. p1 : Bool -> Bool) p1 : Bool -> Bool) (if p1 then p1 else True)
+        d7 : if False then if False then Bool else Bool else if True then Bool else Bool
+        d7 = if if d3 then False else False then if d3 then p1 else d3 else if p1 then p1 else d3
+        d8 : (\x10. (\x11. Bool : Type -> Type) Bool : Type -> Type) (if True then Bool else Bool)
+        d8 = (\x9. if False then d7 else d3 : Bool -> Bool) (if True then p1 else p1)
+        d12 : (\x14. (\x15. Bool : Type -> Type) x14 : Type -> Type) (if False then Bool else Bool)
+        d12 = (\x13. if True then x13 else p1 : Bool -> Bool) (if True then False else p1)
+        d16 : if True then if True then Bool else Bool else if False then Bool else Bool
+        d16 = if if False then p1 else p1 then if d3 then d8 else False else if p1 then d8 else p1
+    module M1(x: Bool) where
+        module M = M0 
+        module N = M (f x) 
+        module O = M (g x) 
+    module M2(x: Bool) where
+        module M = M1 
+        module N = M (f x) 
+        module O = M (g x) 
+    module M3(x: Bool) where
+        module M = M2 
+        module N = M (f x) 
+        module O = M (g x) 
+    module M4(x: Bool) where
+        module M = M3 
+        module N = M (f x) 
+        module O = M (g x) 
+    module M5(x: Bool) where
+        module M = M4 
+        module N = M (f x) 
+        module O = M (g x) 

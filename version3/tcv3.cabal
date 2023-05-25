@@ -1,0 +1,89 @@
+cabal-Version: 2.2
+name: tcv3
+version: 0.3
+
+common shared-properties
+  default-language:
+    Haskell2010
+  ghc-options:
+    -Wall -fno-warn-unused-matches -fno-warn-orphans -fno-warn-unused-top-binds  -O2
+    -- -fno-warn-unused-imports
+  default-extensions: 
+    --EmptyDataDecls
+    DefaultSignatures
+    DeriveAnyClass
+    --DeriveDataTypeable
+    DeriveGeneric
+    DerivingStrategies
+    FlexibleContexts 
+    FlexibleInstances 
+    GADTs 
+    --GeneralizedNewtypeDeriving
+    --ImportQualifiedPost
+    KindSignatures
+    MultiParamTypeClasses
+    NamedFieldPuns
+    --ParallelListComp
+    --PatternGuards
+    RankNTypes
+    --ScopedTypeVariables
+    TupleSections
+    --TypeSynonymInstances
+    UndecidableInstances 
+    --ViewPatterns
+  build-depends:  
+    base >= 4 && < 5,
+    parsec >= 3.1.8 && < 3.2,
+    mtl >= 2.2.1,
+    deepseq,
+    pretty >= 1.0.1.0,
+    unbound-generics >= 0.2,
+    transformers,
+    array >= 0.3.0.2 && < 0.6,
+    timestats == 0.1.0,
+    containers,
+    directory,
+    filepath,
+    tasty,
+    tasty-hunit,
+    tasty-quickcheck,
+    QuickCheck
+  if !impl(ghc >= 8.0)
+    build-depends: semigroups == 0.18.*      
+ 
+
+library
+  import: shared-properties
+  hs-source-dirs: src
+  exposed-modules: 
+    V3.Core.Parser
+    V3.Core.PrettyPrint
+    V3.Core.Syntax
+    V3.TcEnvironment.ModuleEnvironment
+    V3.TcEnvironment.TermEnvironment
+    V3.Equal
+    V3.Error
+    V3.LayoutToken
+    V3.Modules
+    V3.ModuleTypeChecker
+    V3.Parser
+    V3.PrettyPrint
+    V3.ScopeChecker
+    V3.Syntax
+    V3.TermTypeChecker
+    V3.TcMain
+    V3.TypeChecking    
+  
+executable tc
+  import: shared-properties
+  build-depends: tcv3
+  hs-source-dirs: app
+  main-is: Main.hs
+
+test-suite test-tc
+  import: shared-properties
+  build-depends: tcv3
+    , QuickCheck >= 2.13.2
+  type: exitcode-stdio-1.0
+  hs-source-dirs: test
+  main-is: Main.hs

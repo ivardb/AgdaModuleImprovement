@@ -1,0 +1,14 @@
+module aliasOfAlias2 where
+    module M (x : Bool) (y : Bool) where
+        f : Bool
+        f = x
+
+        g : Bool
+        g = y
+
+    module M' = M True
+    module M'' = M' False
+    z : (if M'.g False then Unit else Bool)
+    z = True
+    x : (if M''.g then Unit else Bool)
+    x = True

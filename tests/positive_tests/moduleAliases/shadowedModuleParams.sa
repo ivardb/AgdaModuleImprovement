@@ -1,0 +1,8 @@
+module shadowedModuleParams where
+    module M1 (a : Unit) where
+        module M2 (a : Bool) where
+            x : Unit -> Bool -> Bool
+            x = \a a. a
+    module M3 = M1 1
+    x : (if M3.M2.x True 1 True then Unit else Bool)
+    x = 1

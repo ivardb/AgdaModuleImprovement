@@ -1,0 +1,10 @@
+module dependentModuleArgs where
+    module c (b : Bool) (a : if b then Unit else Bool) where
+        not : Bool -> Bool
+        not = \b . if b then False else True
+
+        f : if b then Unit else Bool
+        f = a
+
+    x : Unit
+    x = c.f True 1

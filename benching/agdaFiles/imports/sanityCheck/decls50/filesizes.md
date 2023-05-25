@@ -1,0 +1,32 @@
+File:|Agda
+---|---
+agdaFiles\imports\sanityCheck\decls50\Decl50Test9.agda|105 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Test8.agda|109 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Test7.agda|108 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Test6.agda|103 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Test5.agda|103 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Test4.agda|109 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Test3.agda|109 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Test2.agda|108 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Test15.agda|106 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Test14.agda|107 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Test13.agda|109 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Test12.agda|107 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Test11.agda|108 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Test10.agda|104 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Test1.agda|107 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Base9.agda|98 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Base8.agda|104 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Base7.agda|99 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Base6.agda|98 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Base5.agda|100 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Base4.agda|104 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Base3.agda|99 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Base2.agda|103 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Base15.agda|103 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Base14.agda|99 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Base13.agda|99 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Base12.agda|101 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Base11.agda|99 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Base10.agda|99 KB
+agdaFiles\imports\sanityCheck\decls50\Decl50Base1.agda|102 KB

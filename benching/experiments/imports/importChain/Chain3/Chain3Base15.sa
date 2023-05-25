@@ -1,0 +1,103 @@
+module Chain3Base15 where
+    module M(p1: if False then Bool else Bool)(p2: if False then Bool else Bool)(p3: if True then Bool else Bool) where
+        d4 : (\x7. (\x8. Bool : Type -> Type) x7 : Type -> Type) (if False then Bool else Bool)
+        d4 = (\x5. (\x6. True : Bool -> Bool) p1 : Bool -> Bool) (if False then p1 else p1)
+        d9 : (\x10. (\x11. x10 : Type -> Type) x10 : Type -> Type) (if False then Bool else Bool)
+        d9 = if if d4 then p2 else True then if True then p2 else d4 else if d4 then p3 else d4
+        d12 : (\x13. if False then Bool else Bool : Type -> Type) (if True then Bool else Bool)
+        d12 = if if False then False else d4 then if p2 then p2 else False else if d9 then False else True
+        d14 : (\x15. (\x16. Bool : Type -> Type) Bool : Type -> Type) (if False then Bool else Bool)
+        d14 = if if p1 then p1 else d9 then if False then p3 else d9 else if p2 then p2 else False
+        d17 : if False then if True then Bool else Bool else if False then Bool else Bool
+        d17 = (\x18. if False then d14 else False : Bool -> Bool) (if d14 then False else True)
+        d19 : (\x22. (\x23. Bool : Type -> Type) x22 : Type -> Type) (if False then Bool else Bool)
+        d19 = (\x20. (\x21. p3 : Bool -> Bool) d17 : Bool -> Bool) (if d4 then p2 else p1)
+        d24 : if True then if False then Bool else Bool else if False then Bool else Bool
+        d24 = (\x25. if d19 then False else d12 : Bool -> Bool) (if p1 then d19 else d12)
+        d26 : (\x27. if True then x27 else x27 : Type -> Type) (if False then Bool else Bool)
+        d26 = if if False then False else False then if True then d9 else d12 else if False then p2 else p1
+        d28 : if False then if False then Bool else Bool else if False then Bool else Bool
+        d28 = if if p3 then False else False then if True then d17 else True else if True then True else False
+        d29 : if True then if True then Bool else Bool else if True then Bool else Bool
+        d29 = (\x30. if True then False else d26 : Bool -> Bool) (if True then d24 else d4)
+        d31 : (\x32. if True then x32 else x32 : Type -> Type) (if True then Bool else Bool)
+        d31 = if if d4 then d29 else d12 then if True then True else False else if True then p3 else False
+        d33 : (\x34. (\x35. Bool : Type -> Type) x34 : Type -> Type) (if True then Bool else Bool)
+        d33 = if if p1 then True else p3 then if True then True else p3 else if p2 then d19 else p2
+        d36 : if False then if False then Bool else Bool else if True then Bool else Bool
+        d36 = (\x37. (\x38. d28 : Bool -> Bool) d14 : Bool -> Bool) (if d4 then p3 else p3)
+        d39 : if False then if False then Bool else Bool else if True then Bool else Bool
+        d39 = (\x40. if d33 then d36 else True : Bool -> Bool) (if d19 then p3 else p1)
+        d41 : (\x43. (\x44. x43 : Type -> Type) x43 : Type -> Type) (if False then Bool else Bool)
+        d41 = (\x42. if p2 then x42 else d28 : Bool -> Bool) (if False then d28 else d12)
+        d45 : if True then if False then Bool else Bool else if True then Bool else Bool
+        d45 = if if False then p1 else False then if p2 then d33 else p3 else if p3 then p2 else False
+        d46 : (\x47. if True then x47 else x47 : Type -> Type) (if True then Bool else Bool)
+        d46 = if if False then d45 else True then if d45 then d39 else True else if True then p3 else p1
+        d48 : (\x51. (\x52. Bool : Type -> Type) x51 : Type -> Type) (if True then Bool else Bool)
+        d48 = (\x49. (\x50. p3 : Bool -> Bool) False : Bool -> Bool) (if True then d24 else True)
+        d53 : if True then if True then Bool else Bool else if False then Bool else Bool
+        d53 = if if False then False else p3 then if d33 then d4 else d26 else if p2 then d17 else d19
+        d54 : if False then if True then Bool else Bool else if True then Bool else Bool
+        d54 = if if False then d28 else d53 then if p1 then d9 else d36 else if False then p1 else True
+        d55 : (\x56. if True then Bool else x56 : Type -> Type) (if False then Bool else Bool)
+        d55 = if if p2 then d48 else p2 then if p3 then d24 else False else if p1 then False else d29
+        d57 : if False then if False then Bool else Bool else if False then Bool else Bool
+        d57 = if if d54 then p1 else False then if d39 then d26 else False else if p2 then d48 else d9
+        d58 : if True then if False then Bool else Bool else if False then Bool else Bool
+        d58 = if if p1 then True else d24 then if d24 then d9 else p2 else if p2 then p1 else p3
+        d59 : (\x60. if True then x60 else Bool : Type -> Type) (if True then Bool else Bool)
+        d59 = if if d41 then p1 else p3 then if d39 then False else True else if False then False else p1
+        d61 : if True then if False then Bool else Bool else if False then Bool else Bool
+        d61 = if if p3 then d57 else True then if d48 then d45 else p2 else if d41 then d33 else d53
+        d62 : (\x65. (\x66. Bool : Type -> Type) Bool : Type -> Type) (if False then Bool else Bool)
+        d62 = (\x63. (\x64. True : Bool -> Bool) p1 : Bool -> Bool) (if d36 then p2 else p2)
+        d67 : (\x68. (\x69. x69 : Type -> Type) x68 : Type -> Type) (if False then Bool else Bool)
+        d67 = if if p1 then d58 else p1 then if True then p1 else p2 else if True then d17 else p3
+        d70 : (\x71. (\x72. x72 : Type -> Type) x71 : Type -> Type) (if False then Bool else Bool)
+        d70 = if if p3 then p1 else p3 then if p2 then d14 else d45 else if d17 then True else p3
+        d73 : (\x75. if True then x75 else Bool : Type -> Type) (if True then Bool else Bool)
+        d73 = (\x74. if False then d17 else d12 : Bool -> Bool) (if False then p3 else p2)
+        d76 : if True then if False then Bool else Bool else if False then Bool else Bool
+        d76 = (\x77. if d12 then False else p2 : Bool -> Bool) (if False then d9 else d59)
+        d78 : (\x79. (\x80. x80 : Type -> Type) x79 : Type -> Type) (if True then Bool else Bool)
+        d78 = if if p1 then p3 else p1 then if d29 then True else d76 else if p2 then d48 else d70
+        d81 : if False then if False then Bool else Bool else if True then Bool else Bool
+        d81 = if if d55 then True else True then if d53 then p1 else p2 else if p2 then p3 else p2
+        d82 : (\x83. (\x84. x83 : Type -> Type) x83 : Type -> Type) (if True then Bool else Bool)
+        d82 = if if d31 then d46 else d70 then if p1 then False else True else if True then d29 else p2
+        d85 : (\x86. (\x87. Bool : Type -> Type) Bool : Type -> Type) (if True then Bool else Bool)
+        d85 = if if p2 then d55 else p3 then if d78 then True else d57 else if d78 then True else p2
+        d88 : if False then if False then Bool else Bool else if True then Bool else Bool
+        d88 = (\x89. if True then True else False : Bool -> Bool) (if False then True else False)
+        d90 : if False then if False then Bool else Bool else if False then Bool else Bool
+        d90 = (\x91. (\x92. True : Bool -> Bool) p1 : Bool -> Bool) (if False then True else p3)
+        d93 : (\x94. if False then x94 else x94 : Type -> Type) (if False then Bool else Bool)
+        d93 = if if d61 then d82 else False then if p3 then False else d46 else if p1 then False else p1
+        d95 : if False then if False then Bool else Bool else if True then Bool else Bool
+        d95 = if if d76 then False else p1 then if d62 then d46 else d4 else if False then True else p2
+        d96 : if True then if True then Bool else Bool else if True then Bool else Bool
+        d96 = if if p1 then True else True then if p1 then p3 else d14 else if p2 then d39 else d24
+        d97 : (\x98. (\x99. Bool : Type -> Type) x98 : Type -> Type) (if True then Bool else Bool)
+        d97 = if if p1 then p2 else False then if d14 then d9 else d33 else if d70 then d78 else p3
+        d100 : if False then if False then Bool else Bool else if True then Bool else Bool
+        d100 = (\x101. (\x102. d54 : Bool -> Bool) p2 : Bool -> Bool) (if p1 then p1 else True)
+        d103 : if False then if True then Bool else Bool else if False then Bool else Bool
+        d103 = if if p2 then True else False then if p2 then d57 else p3 else if p2 then d46 else p1
+        d104 : (\x105. if True then x105 else x105 : Type -> Type) (if True then Bool else Bool)
+        d104 = if if p1 then True else p1 then if True then d67 else True else if True then d36 else p1
+        d106 : if False then if False then Bool else Bool else if True then Bool else Bool
+        d106 = if if d12 then False else p3 then if True then True else d97 else if d41 then p1 else p1
+        d107 : if False then if False then Bool else Bool else if True then Bool else Bool
+        d107 = if if d28 then False else p2 then if p1 then False else False else if True then p3 else d12
+        d108 : (\x109. (\x110. Bool : Type -> Type) x109 : Type -> Type) (if False then Bool else Bool)
+        d108 = if if d4 then d103 else p2 then if d62 then False else d103 else if False then d58 else d29
+        d111 : (\x114. (\x115. Bool : Type -> Type) Bool : Type -> Type) (if False then Bool else Bool)
+        d111 = (\x112. (\x113. d82 : Bool -> Bool) d41 : Bool -> Bool) (if p2 then p2 else d57)
+        d116 : if True then if True then Bool else Bool else if True then Bool else Bool
+        d116 = (\x117. if d88 then x117 else d90 : Bool -> Bool) (if d95 then False else True)
+        d118 : if False then if True then Bool else Bool else if True then Bool else Bool
+        d118 = if if p1 then True else True then if True then False else d93 else if False then p3 else p3
+        d119 : if True then if True then Bool else Bool else if True then Bool else Bool
+        d119 = if if False then p3 else p2 then if True then d118 else True else if True then True else False
+    module M' = M (True) 

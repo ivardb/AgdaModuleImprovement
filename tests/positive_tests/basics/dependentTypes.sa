@@ -1,0 +1,11 @@
+module dependentTypes where
+
+    module c where
+        not : Bool -> Bool
+        not = \b . if b then False else True
+
+        x : (b : Bool) -> (if not b then Unit else Bool) -> (if not b then Unit else Bool)
+        x = \b x . x
+
+    x : Unit
+    x = c.x False 1

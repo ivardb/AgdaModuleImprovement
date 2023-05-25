@@ -1,0 +1,8 @@
+module partialAlias2 where
+    module M0(p1: Bool) where
+        d : Bool
+        d = True
+    module M1(x: Bool) where
+        module M = M0 
+        module N = M True 
+        module O = M True

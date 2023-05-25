@@ -1,0 +1,8 @@
+module simpleAlias2 where
+    module test (A : Type) (a : A) where
+        x : A
+        x = a
+    module tBool (a : Bool) = test Bool a
+
+    b : Bool
+    b = tBool.x False 

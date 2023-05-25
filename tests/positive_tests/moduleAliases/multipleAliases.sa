@@ -1,0 +1,13 @@
+module multipleAliases where
+    module typeMod (T : Type) where
+        module constMod (e : T) where
+            elem : T
+            elem = e
+
+    module boolId = typeMod.constMod Bool
+    false : Bool
+    false = boolId.elem False
+
+    module trueConst = typeMod.constMod Bool True
+    true : Bool
+    true = trueConst.elem

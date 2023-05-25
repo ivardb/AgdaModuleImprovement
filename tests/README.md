@@ -1,0 +1,3 @@
+# Tests
+
+This folder contains a number of Simple Agda files used for testing purposes. The files in [positive_test](positive_tests/) should pass while the files in [negative_tests](negative_tests/) should not pass (With the exception of [baseImport.sa](negative_tests/imports/baseImport.sa) which is needed to test problematic imports). Running the tests for a specific version will also generate the core files of that version for the test files, allowing users to inspect those to get a better picture of the differences between versions.

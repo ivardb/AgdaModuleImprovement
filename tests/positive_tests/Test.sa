@@ -1,0 +1,12 @@
+module Test where
+
+	module M (b : Bool) where 
+		f : Bool 
+		f = b
+		
+		g : Bool 
+		g = f 
+
+	module N = M False 
+	main : (if N.g then Unit else Bool)
+	main = N.g

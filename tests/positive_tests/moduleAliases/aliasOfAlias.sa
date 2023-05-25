@@ -1,0 +1,6 @@
+module aliasOfAlias where
+    module M (b : Bool) (b1 : Bool) where
+        f : Bool
+        f = b1
+    module M1 (a : Bool) = M True a
+    module M2 = M1 False

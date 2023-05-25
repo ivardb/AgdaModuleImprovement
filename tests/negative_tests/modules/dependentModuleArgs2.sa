@@ -1,0 +1,6 @@
+module dependentModuleArgs2 where
+    module M (b : Bool) where
+        module M2(x : if b then Bool else Unit) where
+            c = x
+
+        module M3 = M2 True

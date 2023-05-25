@@ -1,0 +1,32 @@
+File:|Agda
+---|---
+agdaFiles\imports\sanityCheck\decls150\Decl150Test9.agda|121 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Test8.agda|119 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Test7.agda|122 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Test6.agda|117 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Test5.agda|118 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Test4.agda|116 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Test3.agda|126 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Test2.agda|123 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Test15.agda|114 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Test14.agda|117 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Test13.agda|118 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Test12.agda|118 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Test11.agda|117 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Test10.agda|118 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Test1.agda|122 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Base9.agda|266 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Base8.agda|268 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Base7.agda|269 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Base6.agda|273 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Base5.agda|274 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Base4.agda|282 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Base3.agda|272 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Base2.agda|265 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Base15.agda|272 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Base14.agda|266 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Base13.agda|269 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Base12.agda|269 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Base11.agda|276 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Base10.agda|265 KB
+agdaFiles\imports\sanityCheck\decls150\Decl150Base1.agda|269 KB

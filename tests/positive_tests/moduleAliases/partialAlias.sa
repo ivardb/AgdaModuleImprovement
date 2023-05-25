@@ -1,0 +1,8 @@
+module partialAlias where
+    module a (A : Type) (b : A) where
+        x : A
+        x = b
+
+    module c = a Bool
+    x : Bool -> Bool
+    x = \b . c.x b

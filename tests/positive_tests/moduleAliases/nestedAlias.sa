@@ -1,0 +1,12 @@
+module nestedAlias where
+    module M ( p10 : Bool) ( p20 : Bool) where
+        module M1 ( p40 : Bool ) ( p50 : Bool) where
+            module M2 ( p60 : Bool ) ( p70 : Bool) where
+                d59 : Bool
+                d59 = True
+            module M2' = M2 (p20) 
+            d65 : Bool
+            d65 = True
+        module M1' = M1 (p20) 
+    d110 : Bool
+    d110 = M.M1'.M2'.d59 False True False False

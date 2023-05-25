@@ -1,0 +1,57 @@
+cabal-version:      2.2
+name:               benching
+version:            0.1.0.0
+
+author:             icdebruin
+maintainer:         I.C.debruin@student.tudelft.nl
+
+common shared-properties
+    default-language: Haskell2010
+    ghc-options: -O2
+    default-extensions: 
+        InstanceSigs
+        TupleSections
+        FlexibleContexts
+        FlexibleInstances
+        DefaultSignatures
+    build-depends:    
+        base >= 4.7 && < 5,
+        async,
+        tcv0,
+        tcv1,
+        tcv2,
+        tcv3,
+        process,
+        timestats,
+        deepseq,
+        text,
+        directory,
+        containers,
+        pretty,
+        filepath,
+        QuickCheck,
+        transformers,
+        split,
+        mtl,
+        time,
+        unix-compat,
+        unbound-generics == 0.4.2,
+library
+    import: shared-properties
+    hs-source-dirs: src
+    exposed-modules:
+        Generator
+        Runner
+        Processing
+        Rendering
+        GenMain
+        AgdaPrettyPrint
+        AgdaRunner
+
+executable benching
+    import: shared-properties
+    ghc-options:  -threaded +RTS -N4 -RTS
+    main-is:          Main.hs    
+    hs-source-dirs:   app
+    build-depends: benching
+    

@@ -1,0 +1,12 @@
+# 
+## agdaFiles\modAlias/AliasDepth2/3Alias\Issue1646Alias3Mod.agda
+
+Labels|Agda
+---|---
+"Dealing with imports"|15.0 ms
+"Deserialization"|78.0 ms
+"ScopeChecking"|15.0 ms
+"Serialization"|171.0 ms
+"Total"|500.0 ms
+"TypeChecking"|78.0 ms
+
