@@ -1,6 +1,6 @@
 # Simple Agda type-checker
 
-Simple Agda is a simplified version of Agda used by my master thesis (found here: TODO) to evaluate a variety of approaches to type-checking Agda's module system. The code is a heavily modified version of [pi-forall](https://github.com/sweirich/pi-forall).
+Simple Agda is a simplified version of Agda used by my master thesis (found [here](http://resolver.tudelft.nl/uuid:98b8fbf5-33f0-4470-88b0-39a9d526b115)) to evaluate a variety of approaches to type-checking Agda's module system. The code is a heavily modified version of [pi-forall](https://github.com/sweirich/pi-forall).
 
 Simple Agda is a dependently-typed language with type-in-type, primitve Boolean and Unit types as well as if-expressions and dependent-lambdas. The full syntax can be found as a [comment in the parser](version0/src/Parser.hs).
 
